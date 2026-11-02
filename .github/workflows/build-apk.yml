@@ -1,7 +1,7 @@
 name: Build and Release APK
 
 on:
-  workflow_dispatch: # Allows one-click manual trigger from the GitHub web UI
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -25,11 +25,19 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
 
-      - name: Grant Execute Permission for Gradlew
-        run: chmod +x gradlew
+      - name: Ensure Gradle Wrapper Exists
+        run: |
+          if [ ! -f "gradlew" ]; then
+            echo "gradlew missing from repository. Generating wrapper..."
+            gradle wrapper
+          fi
+          chmod +x gradlew
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug --no-daemon
