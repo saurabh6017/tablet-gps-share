@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">LocalNetGPS</string>
+    <string name="tagline">High-Precision Phone-to-Tablet GPS Tethering</string>
+    <string name="mode_transmitter">Transmitter Mode (Phone)</string>
+    <string name="mode_receiver">Receiver Mode (Tablet)</string>
+    <string name="start_server">Start GPS Server</string>
+    <string name="stop_server">Stop GPS Server</string>
+    <string name="start_receiver">Start Mock Receiver</string>
+    <string name="stop_receiver">Stop Mock Receiver</string>
+    <string name="server_ip_label">Transmitter IP Address</string>
+    <string name="server_port_label">TCP Port</string>
+    <string name="open_developer_options">Open Developer Options</string>
+    <string name="grant_permissions">Grant Location Permissions</string>
+    <string name="notif_channel_transmitter_name">GPS Transmitter Service</string>
+    <string name="notif_channel_receiver_name">Mock Location Receiver Service</string>
+    <string name="action_stop_service">Stop</string>
+    <string name="setup_guide_title">📱 First-Time Setup &amp; Mock Location Guide</string>
+    <string name="improve_altitude_title">Improve altitude measurement (experimental)</string>
+    <string name="improve_altitude_subtitle">Uses your phone\'s barometric pressure sensor and live local sea-level pressure (QNH) for steadier elevation.</string>
+    <string name="barometer_unavailable_badge">Barometer unavailable (using GPS)</string>
+    <string name="simulate_driving_title">Simulate Driving Route</string>
+    <string name="simulate_driving_subtitle">Simulates continuous car movement for testing indoors without satellite signal.</string>
+    <string name="legacy_nmea_title">Legacy GPS Output (NMEA)</string>
+    <string name="legacy_nmea_subtitle">Enable only if connecting to older marine or GIS equipment. Keep OFF for tablet navigation.</string>
+    <string name="view_rx_logs_button">📋 View Advanced Raw Packet Stream &amp; Logs</string>
+    <string name="view_tx_logs_button">📋 View Advanced Wire Log</string>
+</resources>

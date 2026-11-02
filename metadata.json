@@ -1,0 +1,8 @@
+{
+  "name": "LocalNetGPS",
+  "description": "High-precision LAN/Hotspot GPS Transmitter and Mock Location Receiver with zero-config UDP auto-discovery, dual JSON/NMEA telemetry streaming, and foreground service persistence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

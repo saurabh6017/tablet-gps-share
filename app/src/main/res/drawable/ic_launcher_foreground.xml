@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer radar ring -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#3300F0FF"
+        android:strokeWidth="2.5"
+        android:pathData="M54,54m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0" />
+    <!-- Inner tactical ring -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#8810B981"
+        android:strokeWidth="2"
+        android:pathData="M54,54m-18,0a18,18 0,1 1,36 0a18,18 0,1 1,-36 0" />
+    <!-- Crosshair ticks -->
+    <path
+        android:fillColor="#00F0FF"
+        android:pathData="M52.5,20h3v8h-3zM52.5,80h3v8h-3zM20,52.5h8v3h-8zM80,52.5h8v3h-8z" />
+    <!-- Navigation delta arrow / GPS pointer -->
+    <path
+        android:fillColor="#00F0FF"
+        android:pathData="M54,31L69,69L54,60L39,69Z" />
+    <!-- Center beacon pulse dot -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M54,52m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+</vector>
